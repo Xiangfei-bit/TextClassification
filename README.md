@@ -21,3 +21,7 @@
 2. python>=3.10
 3. numpy>=2.0.1
 4. scikit-learn>=1.6.1
+## 联系
+[个人博客][py]
+
+[py]: https://blog.csdn.net/2401_85464956?type=blog "个人博客"
