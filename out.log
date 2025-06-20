@@ -1,0 +1,115 @@
+---------LOG at 2025-05-29 23:10:19---------
+---------LOG at 2025-05-29 23:11:34---------
+---------LOG at 2025-05-29 23:12:48---------
+---------LOG at 2025-05-29 23:13:47---------
+Loading data...
+Vocab size: 4762
+Time usage: 0:00:00
+<bound method Module.parameters of Model(
+  (embedding): Embedding(4762, 300)
+  (lstm1): LSTM(300, 128, num_layers=2, batch_first=True, dropout=0.5, bidirectional=True)
+  (tanh1): Tanh()
+  (attention1): Linear(in_features=256, out_features=1, bias=True)
+  (gate): Sequential(
+    (0): Linear(in_features=256, out_features=256, bias=True)
+    (1): Sigmoid()
+  )
+  (lstm2): LSTM(256, 128, num_layers=2, batch_first=True, dropout=0.5, bidirectional=True)
+  (tanh2): Tanh()
+  (attention2): Linear(in_features=256, out_features=1, bias=True)
+  (fc): Sequential(
+    (0): Linear(in_features=512, out_features=128, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.5, inplace=False)
+    (3): Linear(in_features=128, out_features=64, bias=True)
+    (4): ReLU()
+    (5): Dropout(p=0.5, inplace=False)
+    (6): Linear(in_features=64, out_features=3, bias=True)
+  )
+)>
+Epoch [1/20]
+---------LOG at 2025-05-29 23:14:24---------
+Loading data...
+Vocab size: 4762
+Time usage: 0:00:00
+<bound method Module.parameters of Model(
+  (embedding): Embedding(4762, 300)
+  (lstm1): LSTM(300, 128, num_layers=2, batch_first=True, dropout=0.5, bidirectional=True)
+  (tanh1): Tanh()
+  (attention1): Linear(in_features=256, out_features=1, bias=True)
+  (gate): Sequential(
+    (0): Linear(in_features=256, out_features=256, bias=True)
+    (1): Sigmoid()
+  )
+  (lstm2): LSTM(256, 128, num_layers=2, batch_first=True, dropout=0.5, bidirectional=True)
+  (tanh2): Tanh()
+  (attention2): Linear(in_features=256, out_features=1, bias=True)
+  (fc): Sequential(
+    (0): Linear(in_features=512, out_features=128, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.5, inplace=False)
+    (3): Linear(in_features=128, out_features=64, bias=True)
+    (4): ReLU()
+    (5): Dropout(p=0.5, inplace=False)
+    (6): Linear(in_features=64, out_features=3, bias=True)
+  )
+)>
+Epoch [1/20]
+Iter:      0,  Train Loss:   1.1,  Train Acc: 15.62%,  Val Loss:   1.1,  Val Acc: 78.12%,  Time: 0:00:02 *
+Iter:     10,  Train Loss:  0.75,  Train Acc: 71.28%,  Val Loss:  0.61,  Val Acc: 78.12%,  Time: 0:00:04 *
+Epoch [2/20]
+Iter:     20,  Train Loss:  0.63,  Train Acc: 73.44%,  Val Loss:  0.58,  Val Acc: 78.12%,  Time: 0:00:05 *
+Epoch [3/20]
+Iter:     30,  Train Loss:  0.66,  Train Acc: 76.56%,  Val Loss:  0.57,  Val Acc: 78.12%,  Time: 0:00:07 *
+Epoch [4/20]
+Iter:     40,  Train Loss:  0.68,  Train Acc: 66.41%,  Val Loss:  0.53,  Val Acc: 78.12%,  Time: 0:00:08 *
+Epoch [5/20]
+Iter:     50,  Train Loss:   0.5,  Train Acc: 77.34%,  Val Loss:  0.36,  Val Acc: 88.28%,  Time: 0:00:10 *
+Epoch [6/20]
+Iter:     60,  Train Loss:   0.3,  Train Acc: 93.75%,  Val Loss:  0.38,  Val Acc: 90.62%,  Time: 0:00:11 
+Epoch [7/20]
+Iter:     70,  Train Loss:  0.32,  Train Acc: 89.06%,  Val Loss:  0.29,  Val Acc: 92.19%,  Time: 0:00:13 *
+Epoch [8/20]
+Iter:     80,  Train Loss:  0.36,  Train Acc: 89.84%,  Val Loss:  0.21,  Val Acc: 92.97%,  Time: 0:00:15 *
+Epoch [9/20]
+Iter:     90,  Train Loss:  0.11,  Train Acc: 96.88%,  Val Loss:  0.17,  Val Acc: 94.53%,  Time: 0:00:16 *
+Epoch [10/20]
+Iter:    100,  Train Loss:  0.24,  Train Acc: 93.75%,  Val Loss:  0.18,  Val Acc: 95.31%,  Time: 0:00:18 
+Epoch [11/20]
+Iter:    110,  Train Loss:   0.2,  Train Acc: 94.53%,  Val Loss:  0.15,  Val Acc: 96.09%,  Time: 0:00:19 *
+Iter:    120,  Train Loss:  0.16,  Train Acc: 95.74%,  Val Loss:  0.15,  Val Acc: 95.31%,  Time: 0:00:21 
+Epoch [12/20]
+Iter:    130,  Train Loss:  0.14,  Train Acc: 97.66%,  Val Loss:  0.18,  Val Acc: 93.75%,  Time: 0:00:22 
+Epoch [13/20]
+Iter:    140,  Train Loss:  0.14,  Train Acc: 96.09%,  Val Loss:  0.23,  Val Acc: 95.31%,  Time: 0:00:24 
+Epoch [14/20]
+Iter:    150,  Train Loss:  0.16,  Train Acc: 96.09%,  Val Loss:  0.21,  Val Acc: 96.09%,  Time: 0:00:25 
+Epoch [15/20]
+Iter:    160,  Train Loss:  0.24,  Train Acc: 92.97%,  Val Loss:   0.2,  Val Acc: 96.09%,  Time: 0:00:27 
+Epoch [16/20]
+Iter:    170,  Train Loss: 0.059,  Train Acc: 99.22%,  Val Loss:  0.18,  Val Acc: 93.75%,  Time: 0:00:28 
+Epoch [17/20]
+Iter:    180,  Train Loss:  0.24,  Train Acc: 92.97%,  Val Loss:  0.29,  Val Acc: 94.53%,  Time: 0:00:30 
+Epoch [18/20]
+Iter:    190,  Train Loss:  0.22,  Train Acc: 94.53%,  Val Loss:  0.15,  Val Acc: 96.88%,  Time: 0:00:32 
+Epoch [19/20]
+Iter:    200,  Train Loss:  0.07,  Train Acc: 98.44%,  Val Loss:  0.16,  Val Acc: 96.09%,  Time: 0:00:33 
+Epoch [20/20]
+Iter:    210,  Train Loss:  0.16,  Train Acc: 95.31%,  Val Loss:  0.21,  Val Acc: 96.09%,  Time: 0:00:35 
+Test Loss:  0.16,  Test Acc: 96.29%
+Precision, Recall and F1-Score...
+              precision    recall  f1-score   support
+
+        fake     0.8942    0.9394    0.9163        99
+        true     0.9831    0.9858    0.9844       353
+   uncertain     0.0000    0.0000    0.0000         6
+
+    accuracy                         0.9629       458
+   macro avg     0.6258    0.6417    0.6336       458
+weighted avg     0.9510    0.9629    0.9568       458
+
+Confusion Matrix...
+[[ 93   6   0]
+ [  5 348   0]
+ [  6   0   0]]
+Time usage: 0:00:00
